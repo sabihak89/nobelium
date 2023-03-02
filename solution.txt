@@ -1,0 +1,8 @@
+Git stash pop applies the topmost entry in the stash to the working files and removes it from the stash, while git stash apply applies the topmost entry in the stash to the working files but leaves it in the stash.
+
+Git Stash apply ==>
+You can re-apply the changes that you just stashed by using the git stash command.
+
+Git stash pop ==>
+Git allows the user to re-apply the previous commits by using git stash pop command. The popping option removes the changes from stash and applies them to your working file.
+
