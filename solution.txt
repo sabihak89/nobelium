@@ -1,0 +1,16 @@
+ the main difference between gits slash apply and git pop is -
+
+git stash pop throws away the (topmost, by default) stash after applying it,
+whereas git stash apply leaves it in the stash list for possible later reuse 
+(or you can then git stash drop it).
+This happens unless there are conflicts after git stash pop, 
+in which case it will not remove the stash, leaving it to behave exactly like git stash apply.
+
+Another way to look at it: git stash pop is git stash apply && git stash drop.
+like this :
+git stash :apply
+git pop : apply+drop 
+
+What happens in git statsh apply is if any content is inside the stack then it will apply only changes,
+to it and same( git stash pop )kya karta hai ki woh stack se content leke apply ke satah saath drop kar dega 
+this is the difference.
