@@ -1,0 +1,8 @@
+The key difference between git stash pop and apply involves the stash history. When a developer uses the git stash 
+apply command, the most recently saved stash overwrites files in the current working tree but leaves the stash history alone. 
+In contrast, the pop command restores files but then deletes the applied stash. If a developer ever feels the need to use that restored
+ stash again, it will be saved in the local file system.
+
+Think of the git stash pop command as a two-step process. It pulls the most recent stash from history, makes
+ the appropriate changes to files in the local workspace and then deletes that entry from the stash history. Once the git stash
+  pop command is successfully invoked, the stash is permanently deleted and can never be accessed again.
